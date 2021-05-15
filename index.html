@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+	<head>
+        <title>DGCenter</title>
+	<link rel = "icon" href ="img/logo-5.png">
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Signika:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+<style>
+		* {
+			box-sizing: border-box;
+			font-family: 'Patua One', cursive;
+		}
+
+		body{
+			margin: 0;
+			font-size: 20px;
+			background-image: url(images/bg.png);
+			background-size: cover;
+			background-position: center;
+		}
+
+		.navbar{
+			box-shadow: 5px 10px 30px rgba(90,118,253,0.5);
+			padding: 10px;
+			overflow: hidden;
+		}
+		.navbar .logo{
+			font-family: 'Pacifico', cursive;
+			font-size: 18px;
+		}
+		.navbar a {
+			text-decoration: none;
+			color:#111;
+			padding: 10px;
+			float: left;
+			margin: 0;
+		}
+		.icon{
+			float: right;
+			display:none;
+		}
+		.row{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 100px 0;
+		}
+		.col-1{
+			flex: 2;
+			position: relative;
+			margin-left: 50px;
+		}
+		.col-1 h2{
+			font-size: 54px;
+		}
+		.col-1 p{
+			font-size: 25px;
+			color: #707070;
+			font-weight: 100;
+			margin: 20px 0 10px;
+		}
+		.col-2{
+			position: relative;
+			flex: 1;
+			display: flex;
+			align-items: center;
+		}
+		.col-2  .book{
+			width: 90%;
+		}			
+		@media only screen and (max-width: 700px){
+
+			.navbar a:not(:first-child) {
+			display: none;
+		}
+		.navbar {
+			position: relative;
+		}
+		.navbar a.icon {
+			display: block;
+			float: right;
+			position: absolute;
+			top: 1;
+			right: 0;
+		}
+		div.navbar.clicked a {
+			display: block;
+			float: none;
+		}
+		.row{
+			flex-direction: column-reverse;
+			margin: 50px 0;
+		}
+		.col-2{
+			flex: 1;
+			margin-bottom: 50px;
+		}
+		.col-2 .book{
+  			 width: 100%;
+		}
+	}
+		.content1{
+ 			 position: relative;
+ 			 margin: 130px auto;
+ 			text-align: center;
+ 		 	padding: 0 20px;
+		}
+		.content1 .text{
+  			font-size: 2.5rem;
+ 			 font-weight: 600;
+ 			 color: #202020;
+		}
+		.content1 .p{
+ 			 font-size: 2.1875rem;
+ 			 font-weight: 600;
+  			color: #202020;
+		}
+
+
+
+
+ 
+		.contact-box-container{
+   			 display: flex;
+    			justify-content: center;
+   			 align-items: center;
+   			 margin: 0px 0px 30px 0px;
+		}
+		.contact-box{
+   			 background-color: #ffffff;
+   			 padding: 20px;
+    			display: flex;
+    			flex-direction: column;
+    			justify-content: center;
+   			 align-items: center;
+   			 margin: 10px;
+    			border: 1px solid #e2e2e2;
+		}
+		.contact-box strong{
+  			  color:#2c2c2c;
+    			font-size: 1.3rem;
+		}
+		.contact-box p{
+  			  color: #5c5c5c;
+   			 font-weight: 400;
+   			 margin: 10px;
+   			 text-align: center;
+		}
+		.contact-box p span{
+    			color: #059bce;
+		}
+
+		footer{
+ 			   display: flex;
+    			justify-content: center;
+   			 align-items: center;
+   			 padding: 15px;
+   			 background-color: #f4fafa;
+    			color: #222222;
+    			font-size: 0.9rem;
+   			 border-top: 1px solid rgba(0,0,0,0.05);
+		}
+
+</style>
+<body>
+
+		<div class="navbar" id="nav">
+			<a href="index.html" class="logo">DG Center</a>
+			<a href="index.html">Home</a>
+			<a href="#contact">Contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="handleClick()">
+				<i class="fa fa-bars"></i>
+			</a>
+
+
+		</div>
+		<div class="row">
+			<div class="col-1">
+			<h2>We Take Care Of Your Dogs !<br> Like Ours</h2>
+			<p>When we say Leave It, we mean Leave It.   There is you have it ! similar basic commands all dogs should 			know: Name Recognition Sit Down Heel Come Place and Leave It.</p>
+			</div>
+			<div class="col-2">
+				<img src="img/logo-5.png" class="book">
+			
+			</div>
+		</div>
+
+
+
+
+            <div class="contact-box" id="contact">
+                <span>Address</span>
+                <p>KATHMANDU, BANESHOR, OE 45678<br/><b>Phone:</b> <span>+(012) 798856776</span><br/><b>Email:</b> <span>dgcenter7794@gmail.com</span></p>
+            </div>
+    
+
+            <div class="contact-box">
+                <span>Available</span>
+                <p>MON - WED (<span>09:00 AM - 08:00 PM</span>)<br/>THU - FIR (<span>09:00 AM - 08:00 PM</span>)<br/>SAT - SUN (<span>09:00 AM - 08:00 PM</span>)</p>
+                
+            </div>
+    
+        </div>
+    
+        </section>
+        <footer>
+            <span>Copyright 2021 - DG Center</span>
+        </footer>
+		
+		<script>
+			function handleClick(){
+			let nav = document.getElementById("nav");
+				if(nav.className === "navbar"){
+				nav.className += " clicked";
+				}	
+				else{
+					nav.className = "navbar";	
+				}
+			}
+
+		</script>
+
+
+
+
+	</body>
+
+</html>
